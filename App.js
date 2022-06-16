@@ -14,6 +14,7 @@ export default function App() {
       // color2: "#FBC6AE",
       // picture: require("./assets/rose.png"),
       aspectRatio: 1,
+      key: Math.random().toString() 
     },
   
     {
@@ -24,6 +25,7 @@ export default function App() {
       // color2: "#63D8B0",
       // picture: require("./assets/philharmonic.png"),
       aspectRatio: 1,
+      key: Math.random().toString()
     },
     {
       title: "Bone Head",
@@ -33,6 +35,7 @@ export default function App() {
       // color2: "#FDD446",
       // picture: require("./assets/coldbrew.png"),
       aspectRatio: 1,
+      key: Math.random().toString()
     },
     {
       title: "Nitro Cold Brew",
@@ -42,13 +45,14 @@ export default function App() {
       // color2: "#FF9A16",
       // picture: require("./assets/dark.png"),
       aspectRatio: 1,
+      key: Math.random().toString()
     }
   ]);
 
   return (
     <View style={styles.container}>
       <Header />
-      <Home />
+      <Home featuredDrinks={featuredDrinks} setFeaturedDrinks={setFeaturedDrinks}/>
     </View>
   );
 }
