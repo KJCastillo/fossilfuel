@@ -49,19 +49,17 @@ export default function Home({ navigation }) {
       ]);
 
     return (
-        <View>
-            <View>
+            <View style={globalStyles.container}>
                <FlatList 
                data={featuredDrinks}
                renderItem={({item}) => (
                 <TouchableOpacity onPress={() => navigation.navigate('Details', item)}>
-                    <Text style={globalStyles.container}>
+                    <Text style={globalStyles.titleText}>
                         {item.title}
                     </Text>
                 </TouchableOpacity>
                )}
                />
             </View>
-        </View>
     )
 }
