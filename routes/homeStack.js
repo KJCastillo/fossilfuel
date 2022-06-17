@@ -31,6 +31,6 @@ const HomeStack = createStackNavigator(screens, {
     }
 });
 
-export default HomeStack;
+export default createAppContainer(HomeStack);
 //returns a component that can render to app.js, all info about navigation stack
 //by default it'll show Home screen first, then Details as it's stacked this way
