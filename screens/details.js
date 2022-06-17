@@ -2,10 +2,12 @@ import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import { globalStyles } from "../styles/global";
 
-export default function Details() {
+export default function Details({navigation}) {
     return (
-        <View>
-            <Text style={globalStyles.container}>Cart Screen</Text>
+        <View style={globalStyles.container}>
+            <Text style={globalStyles.titleText}>{navigation.getParam('title')}</Text>
+            <Text style={globalStyles.titleText}>{navigation.getParam('subtitle')}</Text>
+            <Text style={globalStyles.titleText}>{navigation.getParam('price')}</Text>
         </View>
     )
 }
