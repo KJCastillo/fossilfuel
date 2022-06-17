@@ -7,7 +7,7 @@ import Details from "../screens/details";
 const screens = {
     Home: {
         screen: Home, 
-        navigationOptions: {
+    navigationOptions: {
             title: 'Fossil Fuel Coffee Co.'
         }
     },
@@ -31,6 +31,6 @@ const HomeStack = createStackNavigator(screens, {
     }
 });
 
-export default createAppContainer(HomeStack);
-//appContainer returns a component that can render to app.js, all info about navigation stack
+export default HomeStack;
+//returns a component that can render to app.js, all info about navigation stack
 //by default it'll show Home screen first, then Details as it's stacked this way
