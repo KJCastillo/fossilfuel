@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 import { StyleSheet, View, Text } from "react-native";
-import Header from "./screens/header";
+//import Header from "./screens/header";
 import Home from "./screens/home";
 
 export default function App() {
@@ -51,7 +51,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Header />
       <Home featuredDrinks={featuredDrinks} setFeaturedDrinks={setFeaturedDrinks}/>
     </View>
   );
