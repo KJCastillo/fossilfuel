@@ -34,7 +34,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Bone Head",
-      subtitle: "Drip coffee witha double shot of espress",
+      subtitle: "Drip coffee with a double shot of espress",
       price: "$5.00",
       // color1: "#FEB829",
       src: require("../assets/bonehead.png"),

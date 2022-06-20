@@ -12,6 +12,7 @@
   "dependencies": {
     "@expo-google-fonts/inter": "^0.2.2",
     "@expo-google-fonts/yanone-kaffeesatz": "^0.2.2",
+    "@react-native-community/checkbox": "^0.5.12",
     "@react-navigation/drawer": "^6.4.1",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
@@ -23,6 +24,9 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-native": "0.68.2",
+    "react-native-bouncy-checkbox": "^2.1.10",
+    "react-native-check-box": "^2.1.7",
+    "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "~2.2.1",
     "react-native-reanimated": "~2.8.0",
     "react-native-screens": "~3.11.1",
