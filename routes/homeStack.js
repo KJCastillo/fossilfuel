@@ -20,7 +20,7 @@ const screens = {
 }
 //import components on top and create screens const to pass below
 
-const stack = createStackNavigator(screens, {
+const HomeStack = createStackNavigator(screens, {
      defaultNavigationOptions: {
         headerStyle: {
             backgroundColor: '#E64A33'
@@ -31,8 +31,6 @@ const stack = createStackNavigator(screens, {
     }
 });
 
-const HomeStack = createAppContainer(stack);
-
-export default HomeStack;
+export default createAppContainer(HomeStack);
 //returns a component that can render to app.js, all info about navigation stack
 //by default it'll show Home screen first, then Details as it's stacked this way

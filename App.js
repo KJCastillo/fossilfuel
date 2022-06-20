@@ -1,5 +1,5 @@
 import react from "react";
-import Navigator from './routes/drawer';
+import Navigator from './routes/homeStack';
 import { useFonts, YanoneKaffeesatz_400Regular, YanoneKaffeesatz_500Medium, YanoneKaffeesatz_700Bold } from '@expo-google-fonts/yanone-kaffeesatz'
 import AppLoading from 'expo-app-loading';
 

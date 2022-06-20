@@ -21,12 +21,3 @@ export const globalStyles = StyleSheet.create({
     backgroundColor: "#f7f1e7",
   }
 });
-
-// export const images = {
-//   ratings: {
-//     '1': require('../assets/carmella_latte.png'),
-//     '2': require('../assets/the_herbivore.png'),
-//     '3': require('../assets/bonehead.png'),
-//     '4': require('../assets/nitro-cold-brew.png'),
-//   }
-// };
