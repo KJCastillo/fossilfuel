@@ -6,6 +6,7 @@ import {
   FlatList,
   TouchableOpacity,
   Image,
+  ImageBackground
 } from "react-native";
 import Card from "../shared/card";
 import { globalStyles } from "../styles/global";
@@ -70,3 +71,11 @@ export default function Home({ navigation }) {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: null,
+    height: null
+  }
+})
