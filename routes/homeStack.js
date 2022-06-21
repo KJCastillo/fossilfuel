@@ -18,7 +18,6 @@ const screens = {
     },
   },
 };
-//import components on top and create screens const to pass below
 
 const HomeStack = createStackNavigator(screens, {
   defaultNavigationOptions: {

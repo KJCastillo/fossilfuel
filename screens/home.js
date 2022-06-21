@@ -119,7 +119,7 @@ export default function Home({ navigation }) {
       key: Math.random().toString(),
     },
     {
-      title: "Hot Chocalate",
+      title: "Hot Chocolate",
       subtitle:
         "A classic. Real Chocolate with creamy steamed milk",
       price: "$3.00",
