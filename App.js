@@ -1,6 +1,8 @@
 import react from "react";
-import Navigator from './routes/homeStack';
+import Navigation from './routes/homeStack';
+//import Navigator from './routes/homeStack';
 import { StyleSheet } from "react-native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import { useFonts, YanoneKaffeesatz_400Regular, YanoneKaffeesatz_500Medium, YanoneKaffeesatz_700Bold } from '@expo-google-fonts/yanone-kaffeesatz'
 import AppLoading from 'expo-app-loading';
 
@@ -13,7 +15,8 @@ export default function App() {
       return <AppLoading />
     }
     return (
-      <Navigator />
+      <Navigation />
+      //<Navigator />
     )
 }
 
