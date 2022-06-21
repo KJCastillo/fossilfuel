@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import {
-  StyleSheet,
+  SafeAreaView,
+  SectionList,
   View,
   Text,
-  FlatList,
   TouchableOpacity,
   Image,
-  ImageBackground
 } from "react-native";
 import Card from "../shared/card";
 import { globalStyles } from "../styles/global";
 
 export default function Home({ navigation }) {
-  const [featuredDrinks, setFeaturedDrinks] = useState([
+  const featuredDrinks = [
     {
       title: "Carmella Latte",
       subtitle:
@@ -48,13 +47,12 @@ export default function Home({ navigation }) {
       aspectRatio: 1,
       key: Math.random().toString(),
     },
-  ]);
+  ];
 
-  const [classicCoffee, setClassicCoffee] = useState([
+  const classicCoffee = [
     {
       title: "Americano",
-      subtitle:
-        "Double shot of espresso with hot water",
+      subtitle: "Double shot of espresso with hot water",
       price: "$3.00",
       //src: require("../assets/nitro_cold_brew.png"),
       aspectRatio: 1,
@@ -62,8 +60,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Latte",
-      subtitle:
-        "A double shot of espresso with creamy steamed milk",
+      subtitle: "A double shot of espresso with creamy steamed milk",
       price: "$4.00",
       //src: require("../assets/nitro_cold_brew.png"),
       aspectRatio: 1,
@@ -71,8 +68,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Cappuccino",
-      subtitle:
-        "Thick and airy steamed milk with a double shot of espress",
+      subtitle: "Thick and airy steamed milk with a double shot of espress",
       price: "$4.00",
       //src: require("../assets/nitro_cold_brew.png"),
       aspectRatio: 1,
@@ -89,8 +85,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Espresso",
-      subtitle:
-        "Strong and straight forward",
+      subtitle: "Strong and straight forward",
       price: "$2.00",
       //src: require("../assets/nitro_cold_brew.png"),
       aspectRatio: 1,
@@ -98,8 +93,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Drip Coffee",
-      subtitle:
-        "Always freshly brewed, medium roast",
+      subtitle: "Always freshly brewed, medium roast",
       price: "$2.00",
       //src: require("../assets/nitro_cold_brew.png"),
       aspectRatio: 1,
@@ -123,17 +117,24 @@ export default function Home({ navigation }) {
       aspectRatio: 1,
       key: Math.random().toString(),
     },
-  ]);
+  ];
 
   return (
-    <View style={globalStyles.container}>
-      <Text style={globalStyles.drinkTitle}>Our Speciality Drinks</Text>
-      <FlatList
-        horizontal={true}
-        data={featuredDrinks}
+    <SafeAreaView>
+      <SectionList
+        sections={[
+          { title: "Our Specialty Drinks", data: featuredDrinks },
+          { title: "Classic Coffee", data: classicCoffee },
+        ]}
+        renderSectionHeader={({ section }) => (
+          <View>
+            <Text>{section.title}</Text>
+          </View>
+        )}
         renderItem={({ item }) => (
           <TouchableOpacity
-            onPress={() => navigation.navigate("Details", item)}>
+            onPress={() => navigation.navigate("Details", item)}
+          >
             <Card>
               <Text style={globalStyles.titleText}>{item.title}</Text>
               <Image source={item.src} />
@@ -141,6 +142,6 @@ export default function Home({ navigation }) {
           </TouchableOpacity>
         )}
       />
-    </View>
+    </SafeAreaView>
   );
 }
