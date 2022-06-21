@@ -9,6 +9,7 @@ export const globalStyles = StyleSheet.create({
   titleText: {
     fontFamily: 'YanoneKaffeesatz_500Medium',
     fontSize: 26,
+    paddingBottom: 5,
     backgroundColor: "#f7f1e7",
   }, drinkTitle: {
     fontFamily: 'YanoneKaffeesatz_500Medium',
@@ -18,10 +19,14 @@ export const globalStyles = StyleSheet.create({
   titleDescription: {
     fontFamily: 'YanoneKaffeesatz_500Medium',
     fontSize: 18,
+    padding: 5,
   },
   paragraph: {
     marginVertical: 8,
     lineHeight: 20,
     backgroundColor: "#f7f1e7",
+  },
+  cartButton: {
+    flexDirection: 'row'
   }
 });
