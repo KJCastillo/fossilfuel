@@ -50,9 +50,84 @@ export default function Home({ navigation }) {
     },
   ]);
 
+  const [classicCoffee, setClassicCoffee] = useState([
+    {
+      title: "Americano",
+      subtitle:
+        "Double shot of espresso with hot water",
+      price: "$3.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+    {
+      title: "Latte",
+      subtitle:
+        "A double shot of espresso with creamy steamed milk",
+      price: "$4.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+    {
+      title: "Cappuccino",
+      subtitle:
+        "Thick and airy steamed milk with a double shot of espress",
+      price: "$4.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+    {
+      title: "Mocha",
+      subtitle:
+        "Double shot of espresso, real chocoalte, and creamy steamed milk",
+      price: "$4.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+    {
+      title: "Espresso",
+      subtitle:
+        "Strong and straight forward",
+      price: "$2.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+    {
+      title: "Drip Coffee",
+      subtitle:
+        "Always freshly brewed, medium roast",
+      price: "$2.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+    {
+      title: "Cortado",
+      subtitle:
+        "Double shot of espresso with a 1:1 steamed milk ratio, simple yet intense",
+      price: "$4.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+    {
+      title: "Cold Brew",
+      subtitle:
+        "Made by steeping coffee in water for a number of hours at cold temperature",
+      price: "$4.00",
+      //src: require("../assets/nitro_cold_brew.png"),
+      aspectRatio: 1,
+      key: Math.random().toString(),
+    },
+  ]);
+
   return (
     <View style={globalStyles.container}>
-      <Text style={globalStyles.drinkTitle}>Featured Drinks</Text>
+      <Text style={globalStyles.drinkTitle}>Our Speciality Drinks</Text>
       <FlatList
         horizontal={true}
         data={featuredDrinks}
