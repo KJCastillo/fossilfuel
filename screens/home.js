@@ -56,7 +56,9 @@ export default function Home({ navigation }) {
 
   return (
     <View style={globalStyles.container}>
+      <Text style={globalStyles.drinkTitle}>Featured Drinks</Text>
       <FlatList
+        horizontal={true}
         data={featuredDrinks}
         renderItem={({ item }) => (
           <TouchableOpacity

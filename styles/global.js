@@ -10,6 +10,10 @@ export const globalStyles = StyleSheet.create({
     fontFamily: 'YanoneKaffeesatz_500Medium',
     fontSize: 26,
     backgroundColor: "#f7f1e7",
+  }, drinkTitle: {
+    fontFamily: 'YanoneKaffeesatz_500Medium',
+    fontSize: 28,
+    margin: 8
   },
   titleDescription: {
     fontFamily: 'YanoneKaffeesatz_500Medium',
