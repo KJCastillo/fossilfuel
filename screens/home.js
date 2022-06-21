@@ -4,6 +4,7 @@ import {
   SectionList,
   View,
   Text,
+  FlatList,
   TouchableOpacity,
   Image,
 } from "react-native";
@@ -120,26 +121,34 @@ export default function Home({ navigation }) {
   ];
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={globalStyles.container}>
       <SectionList
+        numColumns={2}
         sections={[
           { title: "Our Specialty Drinks", data: featuredDrinks },
           { title: "Classic Coffee", data: classicCoffee },
         ]}
         renderSectionHeader={({ section }) => (
-          <View>
-            <Text>{section.title}</Text>
-          </View>
+          <>
+            <Text style={globalStyles.drinkTitle}>{section.title}</Text>
+            <FlatList
+              data={section.data}
+              horizontal
+              renderItem={({ item }) => (
+                <TouchableOpacity
+                  onPress={() => navigation.navigate("Details", item)}
+                >
+                  <Card>
+                    <Text style={globalStyles.titleText}>{item.title}</Text>
+                    <Image source={item.src} />
+                  </Card>
+                </TouchableOpacity>
+              )}
+            />
+          </>
         )}
-        renderItem={({ item }) => (
-          <TouchableOpacity
-            onPress={() => navigation.navigate("Details", item)}
-          >
-            <Card>
-              <Text style={globalStyles.titleText}>{item.title}</Text>
-              <Image source={item.src} />
-            </Card>
-          </TouchableOpacity>
+        renderItem={({ item }) => ( 
+          null
         )}
       />
     </SafeAreaView>
