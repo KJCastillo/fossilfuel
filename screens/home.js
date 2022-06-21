@@ -18,7 +18,6 @@ export default function Home({ navigation }) {
       subtitle:
         "A latte with a blend of two classic falvoers - caramel and vanilla",
       price: "$5.00",
-      // color1: "#F9AC8A",
       src: require("../assets/carmella_latte.png"),
       aspectRatio: 1,
       key: Math.random().toString(),
@@ -28,7 +27,6 @@ export default function Home({ navigation }) {
       title: "The Herbivore",
       subtitle: "A latte with the perfect blend of lavender and honey",
       price: "$5.00",
-      // color1: "#4DD2A5",
       src: require("../assets/the_herbivore.png"),
       aspectRatio: 1,
       key: Math.random().toString(),
@@ -37,7 +35,6 @@ export default function Home({ navigation }) {
       title: "Bone Head",
       subtitle: "Drip coffee with a double shot of espress",
       price: "$5.00",
-      // color1: "#FEB829",
       src: require("../assets/bonehead.png"),
       aspectRatio: 1,
       key: Math.random().toString(),
@@ -47,7 +44,6 @@ export default function Home({ navigation }) {
       subtitle:
         "COMING SOON - cold brew with the addition of nitrogen gas to create a smooth texture",
       price: "$5.00",
-      // color1: "#FE8E01",
       src: require("../assets/nitro_cold_brew.png"),
       aspectRatio: 1,
       key: Math.random().toString(),
@@ -73,11 +69,3 @@ export default function Home({ navigation }) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: null,
-    height: null
-  }
-})
