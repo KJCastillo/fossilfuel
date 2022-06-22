@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createAppContainer } from "react-navigation";
 import { NavigationContainer } from "@react-navigation/native";
 import { globalStyles } from "../styles/global";
+import { StyleSheet } from "react-native";
 import Home from "../screens/home";
 import Details from "../screens/details";
 
@@ -37,14 +38,16 @@ import Details from "../screens/details";
 
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => (
-  <HomeStack.Navigator>
-    <HomeStack.Screen name="Home" component={Home}/>
+  <HomeStack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#E64A33' }, headerTitleStyle: { color: 'white', textAlign: 'center'} }}>
+    <HomeStack.Screen name="Fossil Fuel Coffee Co." component={Home}/>
     <HomeStack.Screen name="Details" component={Details}/>
   </HomeStack.Navigator>
 );
 
+
+
 export default () => (
-  <NavigationContainer>
-    <HomeStackScreen/>
+  <NavigationContainer >
+    <HomeStackScreen />
   </NavigationContainer>
 );
