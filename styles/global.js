@@ -28,5 +28,10 @@ export const globalStyles = StyleSheet.create({
   },
   cartButton: {
     flexDirection: 'row'
+  },
+  checkout: {
+    fontFamily: 'YanoneKaffeesatz_500Medium',
+    fontSize: 28,
+    textAlign: 'center'
   }
 });

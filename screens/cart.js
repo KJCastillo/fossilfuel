@@ -4,8 +4,8 @@ import { globalStyles } from "../styles/global";
 
 export default function Cart() {
     return (
-        <View>
-            <Text>Cart</Text>
+        <View style={globalStyles.container}>
+            <Text style={globalStyles.checkout}>Checkout</Text>
         </View>
     )
 }

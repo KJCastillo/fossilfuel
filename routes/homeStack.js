@@ -11,7 +11,7 @@ import Cart from "../screens/cart";
 //home and details stack
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => (
-  <HomeStack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#E64A33' }, headerTitleStyle: { color: 'white'} }}>
+  <HomeStack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#E64A33' }, headerTitleStyle: { color: 'white', textAlign: 'center'} }}>
     <HomeStack.Screen name="Fossil Fuel Coffee Co." component={Home} options={({}) => {
       return {
         headerTitleAlign: 'center'
