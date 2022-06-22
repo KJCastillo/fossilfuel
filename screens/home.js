@@ -16,7 +16,7 @@ export default function Home({ navigation }) {
     {
       title: "Carmella Latte",
       subtitle:
-        "A latte with a blend of two classic falvoers - caramel and vanilla",
+        "A latte with a blend of two classic flavors - caramel and vanilla",
       price: "$5.00",
       src: require("../assets/carmella_latte.png"),
       aspectRatio: 1,
@@ -33,7 +33,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Bone Head",
-      subtitle: "Drip coffee with a double shot of espress",
+      subtitle: "Drip coffee with a double shot of espresso",
       price: "$5.00",
       src: require("../assets/bonehead.png"),
       aspectRatio: 1,

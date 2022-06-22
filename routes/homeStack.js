@@ -40,7 +40,11 @@ const HomeStack = createStackNavigator();
 const HomeStackScreen = () => (
   <HomeStack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#E64A33' }, headerTitleStyle: { color: 'white', textAlign: 'center'} }}>
     <HomeStack.Screen name="Fossil Fuel Coffee Co." component={Home}/>
-    <HomeStack.Screen name="Details" component={Details}/>
+    <HomeStack.Screen name="Details" component={Details} options={({ route }) => {
+      return {
+        headerTitle: route.params.title
+      }
+    }}/>
   </HomeStack.Navigator>
 );
 
