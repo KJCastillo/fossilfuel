@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { View, Text, Image, Button } from "react-native";
 import { globalStyles } from "../styles/global";
+import RadioForm, {
+  RadioButton,
+  RadioButtonInput,
+  RadioButtonLabel,
+} from "react-native-simple-radio-button";
 import Card from "../shared/card";
 
 export default function Details({ navigation, route }) {
-    const [addToCart, setAddToCart] = useState();
+  const [addToCart, setAddToCart] = useState();
   const title = route.params.title;
   const subtitle = route.params.subtitle;
   const price = route.params.price;
@@ -16,11 +21,14 @@ export default function Details({ navigation, route }) {
         <Image source={pic} />
         <Text style={globalStyles.titleDescription}>{subtitle}</Text>
         <Text style={globalStyles.titleDescription}>{price}</Text>
+        {/* <Text>Make it an iced coffee</Text>
+        <Text>Extra shot of espresso $1</Text>
+        <Text>Milk Choices</Text> */}
         <Button
           style={globalStyles.cartButton}
           title="Add to Cart"
           color="#E64A33"
-          onPress={() => setAddToCart}
+          onPress={() => console.log(title, subtitle, price)}
         />
       </Card>
     </View>

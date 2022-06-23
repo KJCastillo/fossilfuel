@@ -108,8 +108,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Hot Chocolate",
-      subtitle:
-        "A classic. Real Chocolate with creamy steamed milk",
+      subtitle: "A classic. Real Chocolate with creamy steamed milk",
       price: "$3.00",
       src: require("../assets/hot_chocolate.png"),
       key: Math.random().toString(),
@@ -143,9 +142,7 @@ export default function Home({ navigation }) {
             />
           </>
         )}
-        renderItem={({ item }) => ( 
-          null
-        )}
+        renderItem={({ item }) => null}
       />
     </SafeAreaView>
   );
