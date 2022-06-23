@@ -19,7 +19,6 @@ export default function Home({ navigation }) {
         "A latte with a blend of two classic flavors - caramel and vanilla",
       price: "$5.00",
       src: require("../assets/carmella_latte.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
 
@@ -28,7 +27,6 @@ export default function Home({ navigation }) {
       subtitle: "A latte with the perfect blend of lavender and honey",
       price: "$5.00",
       src: require("../assets/the_herbivore.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -36,7 +34,6 @@ export default function Home({ navigation }) {
       subtitle: "Drip coffee with a double shot of espresso",
       price: "$5.00",
       src: require("../assets/bonehead.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -45,7 +42,6 @@ export default function Home({ navigation }) {
         "COMING SOON - cold brew with the addition of nitrogen gas to create a smooth texture",
       price: "$5.00",
       src: require("../assets/nitro_cold_brew.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
   ];
@@ -56,7 +52,6 @@ export default function Home({ navigation }) {
       subtitle: "Double shot of espresso with hot water",
       price: "$3.00",
       src: require("../assets/americano.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -64,7 +59,6 @@ export default function Home({ navigation }) {
       subtitle: "A double shot of espresso with creamy steamed milk",
       price: "$4.00",
       src: require("../assets/latte.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -72,7 +66,6 @@ export default function Home({ navigation }) {
       subtitle: "Thick and airy steamed milk with a double shot of espress",
       price: "$4.00",
       src: require("../assets/cappuccino.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -81,7 +74,6 @@ export default function Home({ navigation }) {
         "Double shot of espresso, real chocoalte, and creamy steamed milk",
       price: "$4.00",
       src: require("../assets/mocha.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -89,7 +81,6 @@ export default function Home({ navigation }) {
       subtitle: "Strong and straight forward",
       price: "$2.00",
       src: require("../assets/espresso.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -97,7 +88,6 @@ export default function Home({ navigation }) {
       subtitle: "Always freshly brewed, medium roast",
       price: "$2.00",
       src: require("../assets/drip_coffee.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -106,7 +96,6 @@ export default function Home({ navigation }) {
         "Double shot of espresso with a 1:1 steamed milk ratio, simple yet intense",
       price: "$4.00",
       src: require("../assets/cortado.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -115,7 +104,6 @@ export default function Home({ navigation }) {
         "Made by steeping coffee in water for a number of hours at cold temperature",
       price: "$4.00",
       src: require("../assets/cold_brew.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
     {
@@ -124,7 +112,6 @@ export default function Home({ navigation }) {
         "A classic. Real Chocolate with creamy steamed milk",
       price: "$3.00",
       src: require("../assets/hot_chocolate.png"),
-      aspectRatio: 1,
       key: Math.random().toString(),
     },
   ];
