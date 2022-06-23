@@ -15,6 +15,7 @@ export default function Details({ navigation, route }) {
   const price = route.params.price;
   const pic = route.params.src;
   
+  const [ice, setIce] = useState(false);
   const [checked, setChecked] = useState(false);
   var radio_props = [
     { label: "Yes", value: 0 },
@@ -37,13 +38,13 @@ export default function Details({ navigation, route }) {
             selectedButtonColor={"#E64A33"}
             buttonColor={"#E64A33"}
             onPress={() => {
-              setChecked(!checked);
+              setIce(!ice);
             }}
           >
           </RadioForm>
         </Text>
         <Text style={globalStyles.titleDescription}>
-          Extra Shot of Espresso
+          Extra Shot of Espresso - $1
           <RadioForm
             radio_props={radio_props}
             initial={-1}
@@ -60,7 +61,7 @@ export default function Details({ navigation, route }) {
           style={globalStyles.cartButton}
           title="Add to Cart"
           color="#E64A33"
-          onPress={() => console.log(checked)}
+          onPress={() => console.log(ice, checked)}
         />
       </Card>
     </SafeAreaView>
