@@ -9,6 +9,10 @@ import {
 } from "@expo-google-fonts/yanone-kaffeesatz";
 import AppLoading from "expo-app-loading";
 
+import { Amplify } from 'aws-amplify'
+import awsconfig from './src/aws-exports'
+Amplify.configure(awsconfig)
+
 export default function App() {
   let [fontsLoaded] = useFonts({
     YanoneKaffeesatz_400Regular,
