@@ -10,6 +10,7 @@ import Card from "../shared/card";
 
 export default function Details({ navigation, route }) {
   const [addToCart, setAddToCart] = useState();
+  
   const title = route.params.title;
   const subtitle = route.params.subtitle;
   const price = route.params.price;
