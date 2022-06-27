@@ -62,7 +62,7 @@ export default function Home({ navigation }) {
     },
     {
       title: "Cappuccino",
-      subtitle: "Thick and airy steamed milk with a double shot of espress",
+      subtitle: "Thick and airy steamed milk with a double shot of espresso",
       price: "$4.00",
       src: require("../assets/cappuccino.png"),
       key: Math.random().toString(),

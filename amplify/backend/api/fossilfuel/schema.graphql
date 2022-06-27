@@ -1,0 +1,13 @@
+type ClassicCoffee @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  subtitle: String
+  price: String
+}
+
+type SpecialityDrinks @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  subtitle: String
+  price: String
+}
