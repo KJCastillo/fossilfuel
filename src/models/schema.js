@@ -1,7 +1,7 @@
 export const schema = {
     "models": {
-        "ClassicCoffee": {
-            "name": "ClassicCoffee",
+        "": {
+            "name": "",
             "fields": {
                 "id": {
                     "name": "id",
@@ -49,7 +49,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "ClassicCoffees",
+            "pluralName": "s",
             "attributes": [
                 {
                     "type": "model",

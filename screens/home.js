@@ -8,6 +8,7 @@ import {
   Image,
 } from "react-native";
 import Card from "../shared/card";
+import { DataStore } from '@aws-amplify/datastore';
 import { globalStyles } from "../styles/global";
 
 export default function Home({ navigation }) {

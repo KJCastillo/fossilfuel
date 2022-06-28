@@ -3,11 +3,12 @@
   "serviceConfiguration": {
     "apiName": "fossilfuel",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/tmp/amplify-150999f4-b730-4ceb-bc1e-0be89d94a570/amplify/backend/api/fossilfuel/schema.graphql",
+    "gqlSchemaPath": "/Users/kevin/Documents/projects/fossilfuel/amplify/backend/api/fossilfuel/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "keyDescription": "api key description",
-      "expirationTime": 30
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-06-28T21:57:03.515Z",
+      "keyDescription": "api key"
     },
     "additionalAuthTypes": [
       {
